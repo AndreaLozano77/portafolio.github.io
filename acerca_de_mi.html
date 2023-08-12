@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" media="screen and (max-width:1170px)" href="./css/tablet.css">
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <!-- Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="#">Portafolio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="acerca_de_mi.html">Acerca de mí</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="habilidades.html">Habilidades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="servicios.html">Servicios</a>
+              </li>
+          </div>
+        </div>
+    </nav>
+
+
+    <!-- About Section-->
+    <section id="about">
+        <div class="container my-1 py-5">
+            <div class="row mb-1">
+                <div class="col-12">
+                    <h1 class="fw-bold text-center">Acerca de mi</h1>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm mb-4">
+                    <img src="./img/saludando.jpg" alt="" width="400px" height="533px">
+                </div>
+                <div class="col-md-6">
+                    <br><br><br>
+                    <h1 class="fw-bold">ANDREA LOZANO</h1>
+                    <h3 class="text-success mb-4">Desarrollo Backend</h3>
+                    <p class="lead mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam libero accusantium commodi nisi veritatis blanditiis modi incidunt sed quia magni? Modi, iure blanditiis. Sint consequuntur ducimus adipisci, non nemo id cum a totam, natus qui corporis distinctio soluta, nostrum cupiditate. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam suscipit architecto nam impedit consequatur accusamus dolor laudantium blanditiis eos! Aliquam earum officia amet id ipsum eum! Voluptatibus earum obcaecati delectus ab? Temporibus incidunt dolor qui ducimus, totam corporis iure illum!</p>
+                    <div class="buttons">
+                        <button class="btn btn-outline-success px-5 py-2 mt-4">Descargar HV</button>
+                        <button class="btn btn-success text-white px-5 py-2 mt-4">Contacto</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Change Navbar Color on csroll-->
+    <script>
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            
+            if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("navbar").style.backgroundColor = "white";
+            } else {
+                document.getElementById("navbar").style.backgroundColor = "transparent";
+            }
+        }
+
+    </script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
